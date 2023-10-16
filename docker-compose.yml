@@ -42,7 +42,7 @@ services:
             caddy.handle_path: /*
             caddy.handle_path.0_respond: "\"\" 403"
             caddy.handle_path.0_header.-Server: ""
-            caddy.handle_path_1: /e=_/* 
+            caddy.handle_path_1: /e=obsidian/* 
             caddy.handle_path_1.0_reverse_proxy: "{{upstreams 5984}}"
         restart: always
 
